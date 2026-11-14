@@ -20,7 +20,9 @@ All on the screen `shop-buy` (Frostbuy's rack window), as kit controls (section 
   - `scrollbar-bulk-cart-bar`, `button-bulk-buy` (BUY: off when the cart is empty or costs more than
     the money), `button-bulk-empty` (EMPTY CART).
 - BUY opens the game's dialog (screen `select`, `yes` / `no`); a notice after it when not everything
-  was bought.
+  was bought, with the reason another mod gave (`rq.shop.on_can_buy`) when one refused a copy.
+- While a mod's scene plays over the shop (`rq.scene.active()`), the tile and bulk mode's widgets are
+  not drawn and not listed; they come back as they were at its end.
 
 While bulk mode is on, the kit takes the mouse: every game control is listed `covered`, and
 `rqmod-ctl press` refuses them. Leave bulk mode first (the tile, `key esc`, or a right click). A

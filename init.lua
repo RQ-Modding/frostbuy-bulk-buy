@@ -198,8 +198,10 @@ local function buy_all()
         break
       end
       local price = rq.item.get(ii).price
-      if not rq.item.buy(ii, { ask = false }) then
-        why = price > rq.game.gold() and "not enough money" or "the shop refused one"
+      local bought, refused = rq.item.buy(ii, { ask = false })
+      if not bought then
+        -- A mod's rq.shop.on_can_buy gives its reason (2.50.0).
+        why = refused or (price > rq.game.gold() and "not enough money" or "the shop refused one")
         break
       end
       got, l.bought = got + 1, l.bought + 1
@@ -430,6 +432,9 @@ rq.on_frame(function()
     if S.on or #S.cart > 0 then reset() end
     return
   end
+  -- A mod scene over the shop (the loader hides the rack window under it, 2.50.0): the tile and the
+  -- cart wait, as they are, for its end.
+  if rq.scene.active() then return end
   -- The hub's look for the kit, and the theme put back for the other mods whatever happens.
   local old = ui.theme
   ui.use(ui.themes.hub)

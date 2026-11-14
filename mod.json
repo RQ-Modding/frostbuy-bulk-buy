@@ -3,7 +3,7 @@
   "id": "frostbuy-bulk-buy",
   "name": "Frostbuy Bulk Buy",
   "author": "Moru Zerinho6",
-  "version": "1.0.0",
-  "loader": "2.49.0",
+  "version": "1.0.1",
+  "loader": "2.50.0",
   "priority": 0
 }

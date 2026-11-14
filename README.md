@@ -35,7 +35,7 @@ Nothing is kept. What you buy is the game's own purchase: the same items, money 
 
 ## Install
 
-Needs [RQ MOD](https://github.com/RQ-Modding/RQ-Mod) with loader **2.49.0** or newer. Extract the
+Needs [RQ MOD](https://github.com/RQ-Modding/RQ-Mod) with loader **2.50.0** or newer. Extract the
 release zip into the game's `mods` folder, so that you have `mods/frostbuy-bulk-buy/mod.json`.
 
 ## How it works

@@ -3,6 +3,13 @@
 Each section is a version of the mod, the `version` in `mod.json`. The release workflow copies the
 section of a tagged version into the release notes.
 
+## 1.0.1
+
+- The tile and the cart hide while a mod's scene plays over the shop (Pluepet Rare Contract's
+  purchase); they come back as they were.
+- A purchase another mod refuses (`rq.shop.on_can_buy`) stops the cart with that mod's reason.
+- Needs loader 2.50.0.
+
 ## 1.0.0
 
 First version.

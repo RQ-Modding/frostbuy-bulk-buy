@@ -48,8 +48,8 @@ empties the cart.
 `no`, `n`, `max`, `copies`; `busy` while BUY runs) and `totals()` (the cart's sum and pieces). Work
 on a copy of the save: BUY spends real money.
 
-## Test Lab
+## Tested in the game
 
-`bulk-buy`: the loader's calls (rq.shop.restocks, restock, next, rq.item.buy's on_buy, the stepper's
+The Test Lab's scenario `bulk-buy`: the loader's calls (rq.shop.restocks, restock, next, rq.item.buy's on_buy, the stepper's
 MAX, marked rows), then, with this mod installed, the tile, a tick, four copies of a weapon bought in
 one BUY (levels, prices, money), short of money, Esc and closing the window.

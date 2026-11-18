@@ -2,6 +2,20 @@
 
 Buy many items at Frostbuy at once: tick them, say how many, and pay once.
 
+## Showcase
+
+### Bulk Buy Button
+
+<img width="610" height="297" alt="image" src="https://github.com/user-attachments/assets/2c9bd7a0-1455-4890-b36c-92adc90298fc" />
+
+### Bulk Buy Screen
+
+<img width="1267" height="961" alt="image" src="https://github.com/user-attachments/assets/3c740cbe-acc6-40fb-bd35-956006db0d2f" />
+
+### Items in the Cart
+
+<img width="1263" height="921" alt="image" src="https://github.com/user-attachments/assets/2a74d733-d866-4d4b-b58a-ed6d81c5dd63" />
+
 ## What it changes
 
 - **BULK BUY**, a tile in the right column of Frostbuy's rack window, turns bulk mode on and off.
